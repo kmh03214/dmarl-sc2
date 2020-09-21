@@ -85,8 +85,13 @@ actions 추가할때마다
 
 10. DQN 정의
 
-# ############## 코랩 
+# 코랩 
     - action 정의 함수에서 문제가 있음 ###############
 
-# ############## 추가구현
+# 추가구현 해야할 것
     - 본진 센터가 터졌을 경우 재건하기
+
+# Trouble Shooting
+    - Colab 환경에서 실행 시, Socket connection timed out 에러가 발생함
+    - 이 이슈는 action space를 정의할 때, raw_function.attack_pt( unit.tag, attack_point )에서,  
+    unit이 다수(2개 이상)가 될 경우에 생김
